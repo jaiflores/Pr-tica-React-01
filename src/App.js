@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import maracuja from './img/maracuja.jpg';
+import "./App.css"
 
 class App extends Component{
 
@@ -8,7 +9,7 @@ class App extends Component{
     idade: "30",
     comidafavorita: "comida de caldo com farofa",
     musicas:["I Lived - OneRepublic", "Raise Your Glass - Pink", "Mais uma vez - Renato Russo"], 
-    // imagem: <img src={require(`${maracuja}`)} alt='maracuja' />,
+    
   }
   
 
@@ -27,9 +28,12 @@ class App extends Component{
             
           </ol>
         </div>
-        {/* <div>
-          <p>{this.state.imagem}</p>
-        </div> */}
+        <div>
+          <p class="t1-fruta" >Minha fruta favorita é maracujá!!!!</p>
+          <figure>
+            <img  class="fruta" src={maracuja} alt="maracuja"/>
+          </figure>
+        </div>
       </section>
     )
     
